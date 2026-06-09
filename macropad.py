@@ -27,8 +27,7 @@ from telegram.ext import (
 #   ★  CONFIGURATION — FILL IN YOUR DETAILS  ★
 # ─────────────────────────────────────────────
 
-import os
-BOT_TOKEN = os.environ.get("BOT_TOKEN")          # From @BotFather
+BOT_TOKEN        = "8891951081:AAG1YtCi8ejncPS-8mVM1X062esTdeNBDNQ"          # From @BotFather
 WEBSITE_URL      = "https://yallapips.com"
 PREORDER_LINK    = "https://yallapips.com/keyboard.html"
 DEMO_LINK        = "https://yallapips.com/demo"   # Your live demo booking link
@@ -100,7 +99,7 @@ FAQS = [
 
     ("Is there a refund policy?",
      "Yes — if the Macropad doesn't work as described on arrival, "
-     f"contact us at {SUPPORT_USERNAME} and we will resolve it."),
+     f"contact us at `{SUPPORT_USERNAME}` and we will resolve it."),
 ]
 
 
@@ -242,7 +241,7 @@ async def preorder(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"3️⃣ Complete payment (card / PayPal / crypto)\n"
         f"4️⃣ Receive confirmation + shipping update by email\n\n"
         f"⚠️ _Only 250 units available. Once sold out — no restock guaranteed._\n\n"
-        f"Questions before buying? Message {SUPPORT_USERNAME}"
+        f"Questions before buying? Message `{SUPPORT_USERNAME}`"
     )
     keyboard = back_keyboard([
         [InlineKeyboardButton("🛒  Pre-order Now — $590", url=PREORDER_LINK)],
@@ -297,7 +296,7 @@ async def support(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
         f"📞 *Yalla Pips — Support*\n\n"
         f"We're here to help with any questions about the Macropad.\n\n"
-        f"💬 *Telegram:* {SUPPORT_USERNAME}\n"
+        f"💬 *Telegram:* `{SUPPORT_USERNAME}`\n"
         f"🌐 *Website:* {WEBSITE_URL}\n"
         f"📢 *Channel:* {CHANNEL_LINK}\n\n"
         f"*We can help with:*\n"
