@@ -27,7 +27,8 @@ from telegram.ext import (
 #   ★  CONFIGURATION — FILL IN YOUR DETAILS  ★
 # ─────────────────────────────────────────────
 
-BOT_TOKEN        = "8891951081:AAG1YtCi8ejncPS-8mVM1X062esTdeNBDNQ"          # From @BotFather
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")          # From @BotFather
 WEBSITE_URL      = "https://yallapips.com"
 PREORDER_LINK    = "https://yallapips.com/keyboard.html"
 DEMO_LINK        = "https://yallapips.com/demo"   # Your live demo booking link
