@@ -32,8 +32,8 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")         # From @BotFather
 WEBSITE_URL      = "https://yallapips.com"
 PREORDER_LINK    = "https://yallapips.com/keyboard.html"
 DEMO_LINK        = "https://yallapips.com"   # Your live demo booking link
-SUPPORT_USERNAME = "https://t.me/Yalla_pips"          # Your Telegram username
-CHANNEL_LINK     = "https://t.me/YallaPipsDigger"
+SUPPORT_USERNAME = "https://t.me/yalla_pips"          # Your Telegram username
+CHANNEL_LINK     = "https://t.me/yallaPips"
 
 # ─── MACROPAD SPECS ───────────────────────────
 MACROPAD_SPECS = {
