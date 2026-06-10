@@ -39,7 +39,7 @@ CHANNEL_LINK     = "https://t.me/yallaPips"
 MACROPAD_SPECS = {
     "name":       "Yalla Macropad",
     "tagline":    "15 full-colour LCD keys. The entire trading desk in your hand.",
-    "price":      "$250",
+    "price":      "$490",
     "edition":    "Edition 01 — Only 250 units",
     "latency":    "<3ms",
     "keys":       "15 full-colour LCD keys",
@@ -190,7 +190,7 @@ async def what(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
     keyboard = back_keyboard([
         [InlineKeyboardButton("🎬  Book Free Live Demo", url=DEMO_LINK)],
-        [InlineKeyboardButton("💰  Pre-order — $590",    url=PREORDER_LINK)],
+        [InlineKeyboardButton("💰  Pre-order — $490",    url=PREORDER_LINK)],
     ])
     await msg.reply_text(text, parse_mode="Markdown", reply_markup=keyboard)
 
@@ -214,7 +214,7 @@ async def features(update: Update, context: ContextTypes.DEFAULT_TYPE):
         text += f"\n{icon} *{title}*\n_{desc}_\n"
 
     keyboard = back_keyboard([
-        [InlineKeyboardButton("💰  Pre-order — $250",    url=PREORDER_LINK)],
+        [InlineKeyboardButton("💰  Pre-order — $490",    url=PREORDER_LINK)],
         [InlineKeyboardButton("🎬  Book Free Live Demo", url=DEMO_LINK)],
     ])
     await msg.reply_text(text, parse_mode="Markdown", reply_markup=keyboard)
@@ -238,14 +238,14 @@ async def preorder(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"━━━━━━━━━━━━━━━━━━━━━━\n"
         f"*How to pre-order:*\n\n"
         f"1️⃣ Visit the link below\n"
-        f"2️⃣ Click *Pre-order · $250*\n"
+        f"2️⃣ Click *Pre-order · $490*\n"
         f"3️⃣ Complete payment (card / PayPal / crypto)\n"
         f"4️⃣ Receive confirmation + shipping update by email\n\n"
         f"⚠️ _Only 250 units available. Once sold out — no restock guaranteed._\n\n"
         f"Questions before buying? Message `{SUPPORT_USERNAME}`"
     )
     keyboard = back_keyboard([
-        [InlineKeyboardButton("🛒  Pre-order Now — $250", url=PREORDER_LINK)],
+        [InlineKeyboardButton("🛒  Pre-order Now — $490", url=PREORDER_LINK)],
         [InlineKeyboardButton("🎬  Book Free Demo First", url=DEMO_LINK)],
         [InlineKeyboardButton("❓  FAQ",                  callback_data="faq")],
     ])
@@ -337,11 +337,11 @@ async def compare(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"✅ Trade under pressure without mis-clicks\n\n"
         f"*The Macropad doesn't find trades for you.*\n"
         f"_It makes sure you execute them perfectly every time._\n\n"
-        f"250 units. $250. One chance.\n"
+        f"250 units. $490. One chance.\n"
         f"👉 {PREORDER_LINK}"
     )
     keyboard = back_keyboard([
-        [InlineKeyboardButton("💰  Pre-order — $250",    url=PREORDER_LINK)],
+        [InlineKeyboardButton("💰  Pre-order — $490",    url=PREORDER_LINK)],
         [InlineKeyboardButton("🎬  See It Live — Demo",  url=DEMO_LINK)],
     ])
     await msg.reply_text(text, parse_mode="Markdown", reply_markup=keyboard)
@@ -368,7 +368,7 @@ async def scarcity(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"👉 Pre-order now: {PREORDER_LINK}"
     )
     keyboard = back_keyboard([
-        [InlineKeyboardButton("🛒  Secure My Unit — $250", url=PREORDER_LINK)],
+        [InlineKeyboardButton("🛒  Secure My Unit — $490", url=PREORDER_LINK)],
     ])
     await msg.reply_text(text, parse_mode="Markdown", reply_markup=keyboard)
 
